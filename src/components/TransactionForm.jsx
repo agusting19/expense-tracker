@@ -1,15 +1,14 @@
 import { useState } from "react";
 import { useGlobalState } from "../context/GlobalState";
 
-const TransaccionForm = () => {
+const TransactionForm = () => {
   const { addTransaction } = useGlobalState();
   const [description, setDescription] = useState("");
   const [amount, setAmount] = useState(0);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addTransaction();
-    console.log(description, amount);
+    addTransaction({ id: 1, description, amount });
   };
 
   return (
@@ -31,4 +30,4 @@ const TransaccionForm = () => {
   );
 };
 
-export default TransaccionForm;
+export default TransactionForm;

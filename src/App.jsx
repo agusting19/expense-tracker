@@ -1,4 +1,4 @@
-import { Header, Balance, TransaccionForm } from "./components";
+import { Header, Balance, TransactionForm } from "./components";
 import { GlobalProvider } from "./context/GlobalState";
 
 const App = () => {
@@ -6,7 +6,7 @@ const App = () => {
     <GlobalProvider>
       <Header />
       <Balance />
-      <TransaccionForm />
+      <TransactionForm />
       <div>hola vieja</div>
     </GlobalProvider>
   );
