@@ -10,11 +10,19 @@ import { GlobalProvider } from "./context/GlobalState";
 const App = () => {
   return (
     <GlobalProvider>
-      <Header />
-      <IncomeExpenses />
-      <Balance />
-      <TransactionForm />
-      <TransactionList />
+      <div className="flex justify-center items-center bg-zinc-950 text-white h-screen">
+        <div className="flex bg-zinc-800 p-10 rounded-lg">
+          <div className="">
+            <Header />
+            <IncomeExpenses />
+            <Balance />
+            <TransactionForm />
+          </div>
+          <div>
+            <TransactionList />
+          </div>
+        </div>
+      </div>
     </GlobalProvider>
   );
 };
