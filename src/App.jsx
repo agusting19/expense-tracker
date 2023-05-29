@@ -20,7 +20,7 @@ const App = () => {
               <Balance />
               <TransactionForm />
             </div>
-            <div className="w-full">
+            <div className="flex flex-col w-full flex-1">
               <ExpenseChart />
               <TransactionList />
             </div>
