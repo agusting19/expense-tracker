@@ -3,8 +3,9 @@ import {
   Balance,
   TransactionForm,
   TransactionList,
+  IncomeExpenses,
+  ExpenseChart,
 } from "./components";
-import IncomeExpenses from "./components/IncomeExpenses";
 import { GlobalProvider } from "./context/GlobalState";
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
               <TransactionForm />
             </div>
             <div className="w-full">
+              <ExpenseChart />
               <TransactionList />
             </div>
           </div>
