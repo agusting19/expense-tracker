@@ -13,14 +13,14 @@ const App = () => {
     <GlobalProvider>
       <div className="flex justify-center items-center bg-zinc-950 text-white h-screen">
         <div className="container mx-auto w-2/5">
-          <div className="flex gap-x-2 bg-zinc-800 p-10 rounded-lg">
+          <div className="flex gap-x-10 bg-zinc-800 p-10 rounded-lg">
             <div>
               <Header />
               <IncomeExpenses />
               <Balance />
               <TransactionForm />
             </div>
-            <div className="w-full">
+            <div className="flex flex-col w-full flex-1">
               <ExpenseChart />
               <TransactionList />
             </div>
